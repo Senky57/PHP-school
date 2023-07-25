@@ -1,0 +1,47 @@
+/***************
+    Header
+***************/
+
+header{
+    display: flex; /* */
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    border-bottom: 1px solid white;
+
+}
+
+.logo{
+    flex-grow: 1;  /*buď má 1 nebo 0, určuje si svoji vlastní plochu */
+
+    
+}
+
+.logo img{
+    width: 50px;
+    margin-left: 20px;
+
+}
+
+
+/* Navigace */
+
+nav{
+    margin-right:200px;
+}
+
+nav li{
+    display: inline-block;
+    margin-right:50px;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color: white
+}
+
+.menu-icon{
+    display: none;
+}

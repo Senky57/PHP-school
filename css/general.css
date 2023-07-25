@@ -1,0 +1,9 @@
+/*****************************
+        General (Obecný)
+*****************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Je to dobrý, aby se to nerozsypalo */
+}

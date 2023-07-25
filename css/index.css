@@ -1,0 +1,71 @@
+/***************************
+
+    Upravujeme main a classu main-heading a jeho prvky
+
+***************************/
+
+main{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.665), rgba(0, 0, 0, 0.265)) ,url(../img/background.webp);
+    background-size: cover;
+    background-position: center; /*zajíždí podle stran, left, center a right, doslova. Ale nejlepší je CENTER, jelikož zajíždí z obou stran :D */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-heading{
+    text-align: center;
+    
+}
+
+.main-heading img{
+    width: 190px;
+    animation: fromTop 10s linear;
+}
+
+.main-heading h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 4px;
+    word-spacing: 1px;
+    animation: fromTop 10s linear;
+}
+
+.main-heading h2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+    animation: fromTop 10s linear;
+}
+
+/* KEY FRAMES (ANIMACE) */
+
+@keyframes reveal{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

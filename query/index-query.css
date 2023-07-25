@@ -1,0 +1,19 @@
+/*Tady to vesměs upravujeme pro mobil */
+@media (max-width: 500px){
+
+    .main-heading img{
+        width: 120px;
+        
+    }
+    .main-heading h1{
+        
+        font-size: 25px;
+        
+    }
+    
+    .main-heading h2{
+        
+        font-size: 20px;
+        
+    }
+}
